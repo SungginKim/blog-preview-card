@@ -14,13 +14,13 @@ html {
   font-family: "Figtree", sans-serif;
 }
 
-main {
+body {
   background-color: var(--Yellow);
-  width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .attribution {
@@ -36,8 +36,8 @@ p {
 
 .card-container {
   background-color: white;
-  height: max(501px, 522px);
-  width: max(327px, 384px);
+  height: 32rem;
+  max-width: 24rem;
   border-radius: 1.25rem;
   border: 1px solid black;
   padding: 1.5rem;
@@ -46,6 +46,7 @@ p {
   align-items: center;
   gap: 1.5rem;
   box-shadow: 8px 8px 0px 0 rgb(0 0 0 /1);
+  margin: 1rem;
 }
 
 .card-container:hover {
@@ -56,11 +57,11 @@ p {
 
 .card-container:hover h1 {
   color: var(--Yellow);
-  transition: color 0.3s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .card-container > img {
-  width: max(17rem, 21rem);
+  max-width: 21rem;
   height: 12.5rem;
   border-radius: 10px;
 }
